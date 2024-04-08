@@ -1,0 +1,262 @@
+* {
+    font-family: 'Arial';
+}
+
+/* navbar */
+#navbar img {
+    width: 100px;
+}
+
+#navbar {
+    position: relative;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 10px 0;
+    border-bottom: 2px solid #002c74; 
+    width: 100px;
+}
+
+#navbar a {
+    font-size: 14px;
+    color: black;
+    font-size: 18px;
+}
+
+#navbar a:hover{
+    color: #002c74;
+}
+
+/* Botão Criar */
+.btn-primary {
+    background-color: #002c74; 
+    color: #fff; 
+    border-color: #0056b3; 
+    border-radius: 5px; 
+    padding: 10px 25px; 
+    font-size: 18px; 
+    text-decoration: none;
+    display: inline-block; 
+    margin-right: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+    border-color: #0056b3; 
+    color: #fff; 
+}
+
+
+/* Estilos para a tabela */
+.table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-collapse: collapse;
+    border: 1px solid #dee2e6;
+}
+
+/* Estilos para o cabeçalho da tabela */
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    color: black;
+    font-size: 18px;
+    
+}
+
+.table thead th {
+    background-color: #002c74;
+    color: #f8f9fa;
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Estilos para as células da tabela */
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+    
+}
+
+/* Estilos para linhas alternadas */
+.table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos para o cabeçalho da tabela */
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* Estilos para células com texto centralizado */
+.table td.text-center,
+.table th.text-center {
+    text-align: center;
+}
+
+/* Estilos para botões dentro das células de ação */
+.table .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+h2 {
+    font-size: 28px; 
+    color: #333; 
+    width: 79.9%;
+    border-bottom: 2px solid #002c74; 
+    margin: -5px auto 5px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+
+.th-status, .th-action{
+    width: 100px;
+}
+.acompanhamento-right-align{
+    text-align: right;
+    margin-left: auto;
+}
+
+.acompanhamento-right-align ion-icon {
+    font-size: 26px;
+    color: #002c74;
+    margin-right: 10px;
+}
+
+td.th-enviado{
+    color: green;
+}
+
+td.th-processando {
+    color: blue;
+}
+
+td.th-emespera{
+    color: orange;
+}
+
+
+/* FOOTER */
+
+
+footer{
+    background-color: #002c74;
+    color: #fff;
+    width: 100%;
+    margin-top: 150px;
+}
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding: 1em 5.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 2.0rem;
+    transition: all 0.4s;
+}
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;;
+} 
+#instagram {
+    background: linear-gradient(#7f37c9,#ff2992,#ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#twitter {
+    background-color: #00acee;
+}
+
+#footer-img{
+    display: block;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: #FFF;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-lin:hover {
+    color: #FFF;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #757575;
+    font-size: 0.9rem;
+    padding: 0,5rem;
+    font-weight: 100;
+}
+@media screen and (max-width:768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
+hr {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+#new-container hr {
+    border: 2px solid #4079bc;
+    margin-top: 5px;
+}
+
+
+
