@@ -28,16 +28,16 @@
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Solicitantes</a>
+                        <a href="/ocurrences/applicants" class="nav-link">Solicitantes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Materiais</a>
+                        <a href="/ocurrences/materials" class="nav-link">Materiais</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Motorista</a>
+                        <a href="/ocurrences/driver" class="nav-link">Motorista</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Automóvel</a>
+                        <a href="/ocurrences/car" class="nav-link">Automóvel</a>
                     </li>
                     <li class="nav-item">
                         <a href="/" class="nav-link">Usuário</a>

@@ -15,4 +15,31 @@ class RequesterController extends Controller
     {
         return view('ocurrences.create');
     }
+
+
+    public function applicants() 
+    {   
+    return view('ocurrences.applicants');
+    }
+
+    public function createapplicants() 
+    {
+        return view('ocurrences.createapplicants');
+    }
+
+    public function materials()
+    {
+        return view('ocurrences.materials');
+    }
+
+    public function driver()
+    {
+        return view('ocurrences.driver');
+
+    }
+
+    public function car()
+    {
+        return view('ocurrences.car');
+    }
 }
