@@ -28,22 +28,46 @@
 
 /* Botão Criar */
 .btn-primary {
-    background-color: #002c74; 
-    color: #fff; 
-    border-color: #0056b3; 
-    border-radius: 5px; 
-    padding: 10px 25px; 
-    font-size: 18px; 
+    background-color: #002c74;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
     text-decoration: none;
-    display: inline-block; 
-    margin-right: 10px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-out;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
 }
 
-.btn-primary:hover {
-    background-color: #0056b3; 
-    border-color: #0056b3; 
-    color: #fff; 
+.btn-primary:before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: ripple 1s linear infinite;
+    opacity: 0;
+    pointer-events: none;
 }
+
+
+.btn-primary:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
+}
+
+.btn-primary:hover:before {
+    animation: none;
+}
+
+
 
 
 /* Estilos para a tabela */
@@ -206,32 +230,42 @@ select.form-control {
 }
 
 /* Estilizando os botões */
-.btn-primary,
 .btn-secondary {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    background-color: #002c74;
     border: none;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.btn-primary {
-    background-color: #002c74;
     color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-out;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
+.btn-secondary:before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: ripple 1s linear infinite;
+    opacity: 0;
+    pointer-events: none;
 }
-
-.btn-secondary {
-    background-color: #002c74;
-    color: white;
-}
-
 .btn-secondary:hover {
-    background-color: #0056b3;
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
+}
+
+.btn-secondary:hover:before {
+    animation: none;
 }
 
 /* Botões em linha */

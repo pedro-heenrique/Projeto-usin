@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Solicitacao;
+
 class RequesterController extends Controller
 {
     public function index()
@@ -42,4 +44,29 @@ class RequesterController extends Controller
     {
         return view('ocurrences.car');
     }
+
+    public function creatematerials() 
+    {   
+    return view('ocurrences.creatematerials');
+    }
+
+    // Método para armazenar uma nova solicitação
+    public function store(Request $request)
+    {
+        $validatedData = $request->validate([
+            'tipo_solicitante' => 'required',
+            'setor' => 'required',
+            'material' => 'required',
+            'motorista' => 'required',
+            'automovel' => 'required',
+            'endereco_origem' => 'required',
+            'endereco_entrega' => 'required',
+        ]);
+
+        Solicitacao::create($validatedData);
+
+        return redirect()->route('index'); 
+    }
 }
+
+

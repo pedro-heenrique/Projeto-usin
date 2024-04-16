@@ -2,6 +2,15 @@
 @section('title', 'Materiais')
 @section('content')
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div> 
+                <a href="/ocurrences/creatematerials" class="btn btn-primary">Criar </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container">
     <h6>Materiais da NOVACAP</h6>
@@ -15,69 +24,15 @@
             </tr>
         </thead>
         <tbody>
+        @foreach($materials as $material)
             <tr>
-                <td>001</td>
-                <td>Cimento Portland</td>
-                <td>500 sacos</td>
-                <td>R$ 25,00</td>
+                <td>{{$material->code}}</td>
+                <td>{{$material->description}}</td>
+                <td>{{$material->quantity}}</td>
+                <td>{{$material->price}}</td>
             </tr>
-            <tr>
-                <td>002</td>
-                <td>Areia</td>
-                <td>50 m³</td>
-                <td>R$ 45,00</td>
-            </tr>
-            <tr>
-                <td>003</td>
-                <td>Brita</td>
-                <td>50 m³</td>
-                <td>R$ 50,00</td>
-            </tr>
-            <tr>
-                <td>004</td>
-                <td>Cascalho</td>
-                <td>50 m³</td>
-                <td>R$ 60,00</td>
-            </tr>
-            <tr>
-                <td>005</td>
-                <td>Terra</td>
-                <td>50 m³</td>
-                <td>R$ 70,00</td>
-            </tr>
-            
+        @endforeach
         </tbody>
     </table>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @endsection

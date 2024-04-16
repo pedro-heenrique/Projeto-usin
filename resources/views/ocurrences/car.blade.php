@@ -3,6 +3,17 @@
 @section('content')
 
 <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div> 
+                <a href="/ocurrences/createdrivers" class="btn btn-primary">Criar </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
     <h6>Veículos da Novacap</h6>
     <table>
         <thead>

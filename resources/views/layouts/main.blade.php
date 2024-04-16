@@ -34,7 +34,7 @@
                         <a href="/ocurrences/materials" class="nav-link">Materiais</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/ocurrences/driver" class="nav-link">Motorista</a>
+                        <a href="/ocurrences/drivers" class="nav-link">Motorista</a>
                     </li>
                     <li class="nav-item">
                         <a href="/ocurrences/car" class="nav-link">Automóvel</a>

@@ -21,6 +21,7 @@
         <div class="col-md-6">
             <div> 
                 <a href="/ocurrences/create" class="btn btn-primary">Criar </a>
+                
             </div>
         </div>
     </div>
@@ -71,5 +72,7 @@
         </div>
     </div>
 </div>
+
+
 
 @endsection
