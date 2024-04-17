@@ -40,9 +40,9 @@ class RequesterController extends Controller
 
     }
 
-    public function car()
+    public function cars()
     {
-        return view('ocurrences.car');
+        return view('ocurrences.cars');
     }
 
     public function creatematerials() 

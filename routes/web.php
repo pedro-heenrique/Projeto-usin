@@ -5,13 +5,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RequesterController;
 use App\Http\Controllers\MaterialController;
 use App\Http\Controllers\DriverController;
+use App\Http\Controllers\CarController;
 
 Route::get('/', [RequesterController::class, 'index'])->name('index');
-Route::get('/ocurrences/create', [RequesterController::class, 'create']);
 Route::get('/ocurrences/applicants', [RequesterController::class, 'applicants']);
 Route::get('/ocurrences/createapplicants', [RequesterController::class, 'createapplicants']);
 Route::post('/ocurrences/createapplicants', [RequesterController::class, 'store'])->name('solicitacoes.store');
-Route::get('/ocurrences/car', [RequesterController::class, 'car']);
 Route::post('/', [RequesterController::class, 'store'])->name('solicitacoes.store');
 
 
@@ -25,3 +24,7 @@ Route::get('/ocurrences/createdrivers', [DriverController::class, 'create']);
 Route::get('/ocurrences/drivers', [DriverController::class, 'index']);
 Route::post('/ocurrences/drivers', [DriverController::class, 'store']);
 
+// Cars
+Route::get('/ocurrences/createcars', [CarController::class, 'create']);
+Route::get('/ocurrences/cars', [CarController::class, 'index']);
+Route::post('/ocurrences/cars', [CarController::class, 'store']);

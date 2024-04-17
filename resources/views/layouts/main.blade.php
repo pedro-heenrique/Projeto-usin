@@ -37,7 +37,7 @@
                         <a href="/ocurrences/drivers" class="nav-link">Motorista</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/ocurrences/car" class="nav-link">Automóvel</a>
+                        <a href="/ocurrences/cars" class="nav-link">Automóvel</a>
                     </li>
                     <li class="nav-item">
                         <a href="/" class="nav-link">Usuário</a>

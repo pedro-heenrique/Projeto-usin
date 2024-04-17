@@ -12,7 +12,9 @@ class CarController extends Controller
      */
     public function index()
     {
-        //
+        $cars = Car::all(); 
+
+            return view('ocurrences.cars', ['cars' => $cars]);
     }
 
     /**
@@ -20,7 +22,7 @@ class CarController extends Controller
      */
     public function create()
     {
-        //
+        return view('ocurrences.createcars');
     }
 
     /**
@@ -28,7 +30,17 @@ class CarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $car = new Car;
+
+        $car->plate = $request->plate;
+        $car->brand = $request->brand;
+        $car->model = $request->model;
+        $car->year = $request->year;
+        $car->color = $request->color;
+
+        $car->save();
+        
+        return redirect('/ocurrences/cars') ;
     }
 
     /**
