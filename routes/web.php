@@ -28,3 +28,12 @@ Route::post('/ocurrences/drivers', [DriverController::class, 'store']);
 Route::get('/ocurrences/createcars', [CarController::class, 'create']);
 Route::get('/ocurrences/cars', [CarController::class, 'index']);
 Route::post('/ocurrences/cars', [CarController::class, 'store']);
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

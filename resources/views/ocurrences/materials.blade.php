@@ -29,7 +29,7 @@
                 <td>{{$material->code}}</td>
                 <td>{{$material->description}}</td>
                 <td>{{$material->quantity}}</td>
-                <td>{{$material->price}}</td>
+                <td>R$ {{$material->price}}</td>
             </tr>
         @endforeach
         </tbody>
